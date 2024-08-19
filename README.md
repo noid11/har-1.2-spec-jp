@@ -73,8 +73,8 @@ HAR オブジェクトタイプのサマリ
 - entries [array] - エクスポートされた全てのリクエストのリスト
 - comment [string, optional] (new in 1.2) - ユーザーまたはアプリケーションによって提供されたコメント
 
-エクスポートされたウェブページごとに 1つ の `<page>` オブジェクトがあり、 HTTP リクエストごとに 1つ の `<entry>` オブジェクトがあります。
-HTTP トレースツールがリクエストのページごとにグループ化出来ない場合、 `<pages>` オブジェクトは空であり、個々のリクエストには親ページがありません。
+エクスポートされたウェブページごとに 1つ の `page` オブジェクトがあり、 HTTP リクエストごとに 1つ の `entry` オブジェクトがあります。
+HTTP トレースツールがリクエストのページごとにグループ化出来ない場合、 `pages` オブジェクトは空であり、個々のリクエストには親ページがありません。
 
 
 ### creator
@@ -121,7 +121,7 @@ HTTP トレースツールがリクエストのページごとにグループ化
 ```
 
 - startedDateTime [string] - ページの読み込みが始まった日時のタイムスタンプ (ISO 8601形式 - YYYY-MM-DDThh:mm.ss.sTZD, 例: 2009-07-24T19:20:30.45+01:00)
-- id [string] - `<log>` 内でページを一意に識別する識別子。エントリはこれを使用して親ページを参照します
+- id [string] - `log` 内でページを一意に識別する識別子。エントリはこれを使用して親ページを参照します
 - title [string] - ページのタイトル
 - pageTimings [object] - ページの読み込みに関する詳細なタイミング情報
 - comment [string, optional] (new in 1.2) - ユーザーまたはアプリケーションによって提供されたコメント
@@ -174,7 +174,7 @@ HTTP トレースツールがリクエストのページごとにグループ化
 
 - pageref [string, unique, optional] - 親ページへの参照。アプリケーションがページごとのグループ化をサポートしていない場合は、このフィールドを省略します
 - startedDateTime [string] - リクエスト開始時の日時のタイムスタンプ(ISO 8601形式 - YYYY-MM-DDThh:mm:ss.sTZD)
-- time [number] - リクエストの合計経過時間 (ミリ秒)。これは、 timings オブジェクトに利用可能なすべてのタイミングの合計です()`-1` の値は含まれません)
+- time [number] - リクエストの合計経過時間 (ミリ秒)。これは、 timings オブジェクトに利用可能なすべてのタイミングの合計です (`-1` の値は含まれません)
 - request [object] - リクエストに関する詳細情報
 - response [object] - レスポンスに関する詳細情報
 - cache [object] - キャッシュ使用に関する情報
@@ -262,7 +262,6 @@ var totalSize = entry.response.headersSize + entry.response.bodySize;
 
 ### cookies
 
-This object contains list of all cookies (used in <request> and <response> objects).
 このオブジェクトには、すべてのクッキーのリストが含まれています (`request` および `response` オブジェクトで使用されています)。
 
 ```json
