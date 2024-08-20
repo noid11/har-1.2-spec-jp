@@ -1,6 +1,6 @@
 # HAR 1.2 Spec 日本語訳
 
-[HAR 1.2 Spec](http://www.softwareishard.com/blog/har-12-spec/) の日本語訳です。
+この文書は [HAR 1.2 Spec](http://www.softwareishard.com/blog/har-12-spec/) の日本語訳です。
 問題やフィードバックがあれば [Issue](https://github.com/noid11/har-1.2-spec-jp/issues) でご連絡ください。
 
 この翻訳は著者の [Jan Odvarko](http://www.softwareishard.com/blog/about/) に許可を得て公開しています。
@@ -8,7 +8,7 @@
 
 ---
 
-Japanese translation of [HAR 1.2 Spec](http://www.softwareishard.com/blog/har-12-spec/). If you have any issues or feedback, please contact me with [Issue](https://github.com/noid11/har-1.2-spec-jp/issues).
+This document is Japanese translation of [HAR 1.2 Spec](http://www.softwareishard.com/blog/har-12-spec/). If you have any issues or feedback, please contact me with [Issue](https://github.com/noid11/har-1.2-spec-jp/issues).
 
 This translation is published with approved by the author [Jan Odvarko](http://www.softwareishard.com/blog/about/). Thanks to Jan Odvarko for readily agreeing to publish the translation. 
 
